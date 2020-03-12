@@ -20,7 +20,7 @@ Use this page as an inspiration:
 https://softwareontheroad.com/aws-s3-secure-direct-upload/
 
 ### Generate IAM Credentials to get Access Key and Access Secret
-![AWS: How To Get Amazon S3 Access Keys](https://objectivefs.com/howto/how-to-get-amazon-s3-keys)
+[AWS: How To Get Amazon S3 Access Keys](https://objectivefs.com/howto/how-to-get-amazon-s3-keys)
 
 ### Configure AWS Policy
 
