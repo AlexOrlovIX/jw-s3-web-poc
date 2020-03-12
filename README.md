@@ -58,8 +58,8 @@ $> yarn start
 Go to http://localhost:3000
 
 Put the URL in a dialog you see on a screen, it should fill in readonly fields
-Select a video File from your local environmet
-![Web-View](../assets/img/signed-url-upload?raw=true)
+Select a video File from your local environment
+![Web-View](../assets/img/signed-url-upload.png?raw=true)
 
 And hit upload
 
