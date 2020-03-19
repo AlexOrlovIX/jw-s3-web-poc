@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 
-
 const submitData = async (uploadUrl, {
     AWSAccessKeyId,
     Signature,
@@ -18,6 +17,9 @@ const submitData = async (uploadUrl, {
         const resp = await fetch(uploadUrl, {
             body: fd,
             method: 'PUT',
+            headers: {
+                "Content-Type": "video/mp4"
+            }
         });
         if (!resp.ok) {
             throw new Error(`${resp.type} / ${resp.status}:${resp.statusText}`);

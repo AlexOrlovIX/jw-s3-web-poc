@@ -30,7 +30,7 @@ const [apiKey, apiSecret] = [
 
 const jwApi = new JWPlatformAPI({apiKey, apiSecret});
 
-jwApi.videos.create({ upload_method: "s3" }).then(response => {
+jwApi.videos.create({ upload_method: "s3", upload_content_type: "video/mp4" }).then(response => {
     const { path, protocol, address, query } = response.link;
     const qs = Object.keys(query).map(key => `${encodeURIComponent(key)}=${encodeURIComponent(query[key])}`).join('&');
     const uploadURL = `${protocol}://${address}${path}?${qs}`;
